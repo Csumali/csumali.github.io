@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; url=/" />
+    <meta charset="utf-8">
+    <title>Redirecting…</title>
+
+    <script type="text/javascript">
+      // Redirect all 404s to index.html and preserve the path
+      var redirectUrl = window.location.pathname;
+      sessionStorage.setItem("redirectPath", redirectUrl);
+      window.location.replace("/");
+    </script>
   </head>
-  <body>
-  </body>
+  <body></body>
 </html>
